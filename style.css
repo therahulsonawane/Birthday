@@ -15,6 +15,7 @@ body {
   align-items: center;
   min-height: 100vh;
   /* overflow: scroll; */
+  
 }
 
 .container {
@@ -194,3 +195,16 @@ p{
     opacity: 0; /* Fade out as it reaches the top */
   }
 }
+
+
+
+/* Hide scrollbar for all browsers */
+body {
+    overflow: -moz-scrollbars-none; /* Firefox (old versions) */
+    -ms-overflow-style: none;  /* Internet Explorer and Edge */
+    scrollbar-width: none; /* Firefox (modern) */
+  }
+  
+  body::-webkit-scrollbar { 
+    display: none; /* Chrome, Safari, Opera */
+  }
