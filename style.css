@@ -126,6 +126,7 @@ p {
 @media (max-width: 768px) {
   .profile-img {
     width: 45%;
+    height: 400px;
   }
 }
 @media (max-width: 768px) {
@@ -133,6 +134,7 @@ p {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    align-items: center;
   }
 }
 
