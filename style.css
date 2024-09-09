@@ -208,3 +208,36 @@ body {
   body::-webkit-scrollbar { 
     display: none; /* Chrome, Safari, Opera */
   }
+
+
+
+
+
+
+
+ /* button clicking audio */
+
+
+
+
+  #surprise-btn {
+    background-color: #ff6347; /* Tomato color */
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+#surprise-btn:hover {
+    background-color: #ff4500; /* Darker Tomato */
+}
+
+#audio-message {
+    margin-top: 20px;
+    font-size: 18px;
+    display: none; /* Hidden by default */
+}

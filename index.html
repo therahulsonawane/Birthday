@@ -10,10 +10,10 @@
   <body>
     <div class="container">
       <!-- Background Music -->
-      <audio id="birthdaySong" autoplay loop>
+      <!-- <audio id="birthdaySong" autoplay loop>
         <source src="birthday-music.mp3" type="audio/mpeg" />
         Your browser does not support the audio tag.
-      </audio>
+      </audio> -->
 
       <!-- Header Section -->
       <div class="header">
@@ -30,6 +30,19 @@
         <img src="2.png" alt="Bhakti's Pic 2" class="profile-img" />
         <img src="3.jpeg" alt="Bhakti's Pic 3" class="profile-img" />
       </div>
+
+      <!-- Surprise Button -->
+      <button id="surprise-btn">Surprise 🎶</button>
+
+      <!-- Hidden message that will show after playing audio -->
+      <p id="audio-message">Enjoy the Music! 🎶</p>
+
+      <!-- Hidden Audio Element -->
+      <audio id="surprise-audio">
+        <source src="birthday-music.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+
       <div id="confetti-container"></div>
 
       <!-- Message Section -->

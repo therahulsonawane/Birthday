@@ -1,8 +1,18 @@
-// Wait for the page to load before starting balloon animation
-document.addEventListener("DOMContentLoaded", function () {
-  // Start background music on load
-  let audio = document.getElementById("birthdaySong");
-  audio.play();
+// // Wait for the page to load before starting balloon animation
+// document.addEventListener("DOMContentLoaded", function () {
+//   // Start background music on load
+//   let audio = document.getElementById("birthdaySong");
+//   audio.play();
+// });
+
+window.addEventListener("load", function () {
+  const audio = document.getElementById("birthdaySong");
+
+  // Play audio once the page is loaded
+  audio.play().catch(() => {
+    // If the browser prevents autoplay, ask for user interaction
+    document.body.addEventListener("click", () => audio.play(), { once: true });
+  });
 });
 
 // Function to generate random confetti colors
@@ -48,3 +58,30 @@ function createConfetti() {
 document.addEventListener("DOMContentLoaded", function () {
   createConfetti(); // Show confetti
 });
+
+
+
+
+
+
+
+
+
+
+
+
+ // Get button and audio elements
+ const surpriseBtn = document.getElementById('surprise-btn');
+ const surpriseAudio = document.getElementById('surprise-audio');
+ const audioMessage = document.getElementById('audio-message');
+
+ // Add click event to button
+ surpriseBtn.addEventListener('click', () => {
+     // Play the audio when the button is clicked
+     surpriseAudio.play();
+
+     // Show message after audio starts playing
+     surpriseAudio.onplay = () => {
+         audioMessage.style.display = 'block'; // Show hidden message
+     };
+ });
